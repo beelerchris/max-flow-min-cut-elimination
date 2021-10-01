@@ -1,0 +1,15 @@
+# Team               Win Loss Left
+--------------------------------------------------
+1 Pride_of_Portree     0    1   23 0 2 2 2 2 2 2 2 2 2 2 2 1 
+2 Kenmare_Kestrels     1    4   19 2 0 2 2 1 1 2 1 2 0 2 2 2 
+3 Appleby_Arrows       2    2   20 2 2 0 2 2 2 1 2 2 0 2 1 2 
+4 Tutshill_Tornados    2    1   21 2 2 2 0 1 2 1 2 2 2 1 2 2 
+5 Falmouth_Falcons     5    1   18 2 1 2 1 0 2 2 1 2 2 2 1 0 
+6 Holyhead_Harpies     1    2   21 2 1 2 2 2 0 1 2 2 2 2 2 1 
+7 Chudley_Cannons      0    4   20 2 2 1 1 2 1 0 2 2 2 2 1 2 
+8 Wigtown_Wanderers    2    2   20 2 1 2 2 1 2 2 0 2 2 2 1 1 
+9 Puddlemere_United    1    2   21 2 2 2 2 2 2 2 2 0 1 1 2 1 
+10 Ballycastle_Bats     6    2   16 2 0 0 2 2 2 2 2 1 0 1 1 1 
+11 Montrose_Magpies     2    3   19 2 2 2 1 2 2 2 2 1 1 0 2 0 
+12 Wimbourne_Wasps      4    1   19 2 2 1 2 1 2 1 1 2 1 2 0 2 
+13 Caerphilly_Catapults 4    5   15 1 2 2 2 0 1 2 1 1 1 0 2 0 
