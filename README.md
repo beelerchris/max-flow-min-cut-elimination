@@ -1,4 +1,4 @@
-# Max-flow Min-cut Baseball end-of-season elimination
+# Max-flow Min-cut Baseball End-of-Season Elimination
 A Julia implementation of the graph theory based max-flow min-cut baseball end-of-season elimination problem. This problem deals with determining when a baseball team is mathematically eliminated from a division, i.e. when it becomes impossible for them to finish in 1st place.
 
 The file **graph_functions.jl** never needs to be run. This file only contains functions which are imported by the other included files. To use this method on a specific division standing, the name of the text file which contains the division standing information must be specified on line 4 of **elimination.jl**. The two examples from this report are included in the files **division_1.txt** and **division_2.txt** respectively. Once the division is specified, **elimination.jl** can be run and will output the certificate of elimination for each eliminated team. If there is no output from running this code then no teams are eliminated.
