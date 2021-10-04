@@ -4,6 +4,7 @@ include("_graph_functions.jl")
 
 if division == String[]
     division = "./divisions/division_1.txt"
+end
 
 # Parse divinsion information into useful information
 teams, games, A = read_division(division)

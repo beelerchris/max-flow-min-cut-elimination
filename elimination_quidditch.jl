@@ -4,6 +4,7 @@ function elimination_quidditch(div_path)
 
     if div_path == String[]
         div_path = "./divisions/quidditch_div/"
+    end
 
     # Specify the number of teams in the league.
     n = size(read_division(division)[1])[1]

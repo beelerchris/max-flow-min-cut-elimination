@@ -21,14 +21,18 @@ function gen_quidditch(n_teams)
     println(ARGS == String[])
     if ARGS == String[]
         n = 13
+    end
     else
         n = parse(Int, n_teams)
         if n > 13
             println("Number of teams is too large. It has been reduced to 13.")
             n = 13
+        end
         if n < 2
             println("Number of teams is too small. It has been increased to 2.")
             n = 2
+        end
+    end
 
     # Randomly select n teams from the list of 13.
     teams = shuffle(all_teams)[1:n]
