@@ -2,8 +2,10 @@ include("_graph_functions.jl")
 
 # Name of the file containing the division information
 
-if division == String[]
+if ARGS == String[]
     division = "./divisions/division_1.txt"
+else
+    division = ARGS[1]
 end
 
 # Parse divinsion information into useful information

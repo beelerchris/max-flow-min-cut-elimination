@@ -18,17 +18,14 @@ function gen_quidditch(n_teams)
                  "Wimbourne_Wasps     "]
 
     # The total number of teams included in the division. (2 <= n <= 13)
-    println(ARGS == String[])
-    if ARGS == String[]
+    if n_teams == String[]
         n = 13
-    end
     else
-        n = parse(Int, n_teams)
+        n = parse(Int, n_teams[1])
         if n > 13
             println("Number of teams is too large. It has been reduced to 13.")
             n = 13
-        end
-        if n < 2
+        elseif n < 2
             println("Number of teams is too small. It has been increased to 2.")
             n = 2
         end
@@ -57,7 +54,7 @@ function gen_quidditch(n_teams)
     # Simulate an outcome for each match and store the division standings.
     count = 0
     while sum(A) > 1e-9
-        global count += 1
+        count += 1
         # Randomly select a match from the remaining unplayed matches.
         games = findall(x->x>1e-9, A)
         game = rand(1:size(games)[1])
@@ -86,10 +83,10 @@ function gen_quidditch(n_teams)
             end
             div = div * "\n"
         end
-        open("./quidditch_div/division_quid_" * string(count) * ".txt", "w") do text_file
+        open("./divisions/quidditch_div/division_quid_" * string(count) * ".txt", "w") do text_file
             write(text_file, div)
         end
     end
 end
 
-gen_quidditch(ARGS[1])
+gen_quidditch(ARGS)

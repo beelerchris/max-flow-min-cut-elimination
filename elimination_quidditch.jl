@@ -2,26 +2,24 @@ include("_graph_functions.jl")
 
 function elimination_quidditch(div_path)
 
-    if div_path == String[]
+    if div_path == String[] || typeof(div_path) != String
         div_path = "./divisions/quidditch_div/"
+    else
+        div_path = div_path[1]
     end
 
     # Specify the number of teams in the league.
+    local division = div_path * "division_quid_1.txt"
     n = size(read_division(division)[1])[1]
     dsq = zeros(Int, n)
     n_matches = (n - 1) * n
 
     for d in 1:n_matches
-        global div_path
-
         # Name of the file containing the division information
         local division = div_path * "division_quid_" * string(d) * ".txt"
 
         # Parse divinsion information into useful information
         local teams, games, A = read_division(division)
-
-        # Get the number of teams
-        global n
 
         for i in 1:n
             # If Team i has been eliminated we can skip them.
@@ -93,4 +91,4 @@ function elimination_quidditch(div_path)
     end
 end
 
-elimination_quidditch(ARGS[1])
+elimination_quidditch(ARGS)
