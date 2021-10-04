@@ -34,7 +34,7 @@ Stored in **./divisions/division_2.txt**
 
 ## Examples
 
-### Elimination certificate for Division 1
+### Elimination Certificate for Division 1
 
     >> julia elimination.jl
     Philadelphia is eliminated.
@@ -48,7 +48,7 @@ Stored in **./divisions/division_2.txt**
     They can win at most 77 + 3 = 80 games.
     Atlanta has already won 83 games.
 
-### Elimination certificate for Division 2
+### Elimination Certificate for Division 2
 
     >> julia elimination.jl ./divisions/division_2.txt
     Detroit is eliminated.
