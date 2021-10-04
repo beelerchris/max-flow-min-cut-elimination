@@ -58,7 +58,7 @@ Stored in **./divisions/division_2.txt**
     On average, each of the teams in this group wins 305 / 4 = 76.25 games.
     Therefore one team will win at least 77 games.
 
-### Elimination Certificate for 5 Team Quidditch League (Method 1)
+### Elimination Certificate for Random 5 Team Quidditch League (Method 1)
 
     >> julia main_quidditch.jl 5
     Montrose_Magpies is eliminated after 8 total matches in the season.
@@ -83,7 +83,7 @@ Stored in **./divisions/division_2.txt**
     They can win at most 6 + 0 = 6 games.
     Ballycastle_Bats has already won 7 games.
 
-### Elimination Certificate for 13 Team Quidditch League (Method 2)
+### Elimination Certificate for Random 13 Team Quidditch League (Method 2)
 
     >> julia gen_quidditch.jl
     >> julia elimination_quidditch.jl 
@@ -134,3 +134,54 @@ Stored in **./divisions/division_2.txt**
     Chudley_Cannons is eliminated after 135 total matches in the season.
     They can win at most 12 + 4 = 16 games.
     Holyhead_Harpies has already won 17 games.
+
+### Elimination Certificate for Quidditch League 3
+
+    >> julia elimination_quidditch.jl ./divisions/quidditch_div3/
+    Pride_of_Portree is eliminated after 90 total matches in the season.
+    They can win at most 0 + 12 = 12 games.
+    Ballycastle_Bats has already won 13 games.
+
+    Chudley_Cannons is eliminated after 104 total matches in the season.
+    They can win at most 3 + 10 = 13 games.
+    Tutshill_Tornados has already won 14 games.
+
+    Kenmare_Kestrels is eliminated after 105 total matches in the season.
+    They can win at most 7 + 6 = 13 games.
+    Tutshill_Tornados has already won 14 games.
+
+    Appleby_Arrows is eliminated after 108 total matches in the season.
+    They can win at most 6 + 7 = 13 games.
+    Tutshill_Tornados has already won 14 games.
+
+    Falmouth_Falcons is eliminated after 112 total matches in the season.
+    They can win at most 9 + 4 = 13 games.
+    Tutshill_Tornados has already won 14 games.
+
+    Wimbourne_Wasps is eliminated after 120 total matches in the season.
+    They can win at most 10 + 4 = 14 games.
+    Tutshill_Tornados has already won 15 games.
+
+    Caerphilly_Catapults is eliminated after 141 total matches in the season.
+    They can win at most 13 + 1 = 14 games.
+    Tutshill_Tornados has already won 15 games.
+
+    Holyhead_Harpies is eliminated after 143 total matches in the season.
+    They can win at most 12 + 2 = 14 games.
+    Tutshill_Tornados has already won 15 games.
+
+    Wigtown_Wanderers is eliminated after 147 total matches in the season.
+    They can win at most 14 + 1 = 15 games.
+    Ballycastle_Bats has already won 16 games.
+
+    Tutshill_Tornados is eliminated after 153 total matches in the season.
+    They can win at most 15 + 0 = 15 games.
+    Puddlemere_United has already won 16 games.
+
+    Montrose_Magpies is eliminated after 155 total matches in the season.
+    They can win at most 15 + 0 = 15 games.
+    Puddlemere_United has already won 16 games.
+
+    Ballycastle_Bats is eliminated after 156 total matches in the season.
+    They can win at most 16 + 0 = 16 games.
+    Puddlemere_United has already won 17 games.
