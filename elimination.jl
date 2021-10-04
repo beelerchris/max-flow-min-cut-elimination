@@ -1,7 +1,7 @@
-include("graph_functions.jl")
+include("_graph_functions.jl")
 
 # Name of the file containing the division information
-division = "division_1.txt"
+division = "./divisions/division_1.txt"
 
 # Parse divinsion information into useful information
 teams, games, A = read_division(division)

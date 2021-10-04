@@ -1,4 +1,4 @@
-include("graph_functions.jl")
+include("_graph_functions.jl")
 
 # Specify the number of teams in the league.
 n = 13
@@ -7,10 +7,10 @@ n_matches = (n - 1) * n
 
 for d in 1:n_matches
     # Name of the file containing the division information
-    local division = "./quidditch_div/division_quid_" * string(d) * ".txt"
-    #local division = "./quidditch_div1/division_quid_" * string(d) * ".txt"
-    #local division = "./quidditch_div2/division_quid_" * string(d) * ".txt"
-    #local division = "./quidditch_div3/division_quid_" * string(d) * ".txt"
+    local division = "./divisions/quidditch_div/division_quid_" * string(d) * ".txt"
+    #local division = "./divisions/quidditch_div1/division_quid_" * string(d) * ".txt"
+    #local division = "./divisions/quidditch_div2/division_quid_" * string(d) * ".txt"
+    #local division = "./divisions/quidditch_div3/division_quid_" * string(d) * ".txt"
 
     # Parse divinsion information into useful information
     local teams, games, A = read_division(division)
