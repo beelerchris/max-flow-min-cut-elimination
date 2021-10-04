@@ -7,18 +7,34 @@ To run the Quidditch experiment from this report, the number of teams must be sp
 
 Alternatively, the number of teams can be specified when running **main_quidditch.jl** which will sequentially run **gen_quidditch.jl** and **elimination_quidditch.jl**.
 
-## Default Division
+## Default Divisions
+
+### Division 1
 
 |#|Team        |Wins|Loss|Left|Atl|Phi|NY |Mon|
 |-|------------|----|----|----|---|---|---|---|
-|1|Atlanta     |83  |71  | 8  |0  |1  |6  | 1 |
-|2|Philadelphia|80  |79  | 3  |1  |0  |0  | 2 |
-|3|New_York    |78  |78  | 6  |6  |0  |0  | 0 |
-|4|Montreal    |77  |82  | 3  |1  |2  |0  | 0 |
+|1|Atlanta     |83  |71  |8   |0  |1  |6  |1  |
+|2|Philadelphia|80  |79  |3   |1  |0  |0  |2  |
+|3|New York    |78  |78  |6   |6  |0  |0  |0  |
+|4|Montreal    |77  |82  |3   |1  |2  |0  |0  |
+
+Stored in **./divisions/division_1.txt**
+
+### Division 2
+
+|#|Team        |Wins|Loss|Left|NY |Bal|Bos|Tor|Det|
+|-|------------|----|----|----|---|---|---|---|---|
+|0|New York    |75  |59  |28  |0  |3  |8  |7  |3  |
+|1|Baltimore   |71  |63  |28  |3  |0  |2  |7  |4  |
+|2|Boston      |69  |66  |27  |8  |2  |0  |0  |0  |
+|3|Toronto     |63  |72  |27  |7  |7  |0  |0  |0  |
+|4|Detroit     |49  |86  |27  |3  |4  |0  |0  |0  |
+
+Stored in **./divisions/division_2.txt**
 
 ## Examples
 
-Generating the elimination certificate for the default division
+### Elimination certificate for Division 1
 
     >> julia elimination.jl
     Philadelphia is eliminated.
@@ -32,6 +48,8 @@ Generating the elimination certificate for the default division
     They can win at most 77 + 3 = 80 games.
     Atlanta has already won 83 games.
 
+### Elimination certificate for Division 2
+
     >> julia elimination.jl ./divisions/division_2.txt
     Detroit is eliminated.
     They can win at most 49 + 27 = 76 games.
@@ -39,6 +57,8 @@ Generating the elimination certificate for the default division
     They play each other 27 times.
     On average, each of the teams in this group wins 305 / 4 = 76.25 games.
     Therefore one team will win at least 77 games.
+
+### Elimination Certificate for 5 Team Quidditch League (Method 1)
 
     >> julia main_quidditch.jl 5
     Montrose_Magpies is eliminated after 8 total matches in the season.
@@ -62,6 +82,8 @@ Generating the elimination certificate for the default division
     Tutshill_Tornados is eliminated after 17 total matches in the season.
     They can win at most 6 + 0 = 6 games.
     Ballycastle_Bats has already won 7 games.
+
+### Elimination Certificate for 13 Team Quidditch League (Method 2)
 
     >> julia gen_quidditch.jl
     >> julia elimination_quidditch.jl 

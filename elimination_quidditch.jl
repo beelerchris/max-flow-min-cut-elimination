@@ -2,7 +2,9 @@ include("_graph_functions.jl")
 
 function elimination_quidditch(div_path)
 
-    if div_path == String[] || typeof(div_path) != String
+    if div_path == String[] 
+        div_path = "./divisions/quidditch_div/"
+    elseif typeof(div_path[1]) != String
         div_path = "./divisions/quidditch_div/"
     else
         div_path = div_path[1]
